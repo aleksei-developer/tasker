@@ -1,0 +1,119 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+button{
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+transition: 0.3s;
+}
+.add-task:hover{
+  background-color:rgba(0, 0, 0, 0.2);
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+  }
+  
+.tasks-wrapper {
+  background-color: rgba(44, 127, 196, 0.5);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 20px;
+  }
+  
+  .list-wrapper {
+  background-color: rgba(29, 164, 173, 0.5);
+  border-radius: 20px;
+  }
+  
+  
+  .enter-task {
+  padding: 5px;
+  width: 50%;
+  font-weight: bold;
+  border-radius: 5px;
+  }
+  
+  
+  .list {
+  padding: 10px;
+  user-select: none;
+  }
+  .delete-task{
+    position: relative;
+width: 20px;
+height: 20px;
+  }
+  .delete-task::after{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/trash.svg');
+    position: absolute;
+    content: "";
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+  }
+  .new-task {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  }
+  .add-task{
+    width: 20px;
+    height: 20px;
+  }
+  .add-task__img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+  .item-task {
+  background-color: #fff;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  height: 20px;
+  text-align: left;
+  }
+  .task-editor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+  }
+  .delete-task {
+  position: absolute;
+  right: 20px;
+  }
+
+  @media(max-width:767.98px){
+    .title{
+      font-size: 22px;
+      line-height: 1;
+    }
+    .tasks-wrapper{
+      padding: 10px;
+    }
+.list{
+ margin: 5px;
+ padding: 5px;
+}
+.new-task{
+  padding: 5px;
+}
+  }
